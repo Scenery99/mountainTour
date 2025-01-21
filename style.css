@@ -14,8 +14,12 @@
 :root {
     --font-family: "Nunito Sans", serif;
     --light-gray: #fdfdfd;
+    --white-gray: #f3f5f4;
     --dark-yellow: #F2BE22;
     --dark-sea: #1A3E3E;
+    --dark: #18121E;
+    --blue: #0000FF;
+    --white: #FFFFFF;
 }
 
 body {
@@ -25,7 +29,7 @@ body {
 /* start */
 
 .start {
-    background-image: url(./1start/Фон\ start\ .png);
+    background-image: url(./img/1start/Фон\ start\ .png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -118,7 +122,7 @@ body {
     border-radius: 3px;
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--white);
     transition: all .3s;
 }
 
@@ -274,20 +278,20 @@ body {
     height: 8px;
     z-index: 3;
     top: 40%;
-    border: 1px solid blue;
+    border: 1px solid var(--blue);
     border-width: 0 0 1px 1px;
     transform: rotate(-45deg);
 }
  
 .choices[data-type*=select-one].is-open:after {
     top: 60%;
-    border: 1PX solid blue;
+    border: 1PX solid var(--blue);
     border-width: 1px 1px 0 0;
 }
 
 .choices__inner {
     position: relative;    
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     z-index: 2;
 }
@@ -383,7 +387,7 @@ body {
     font-weight: 800;
     font-size: 32px;
     line-height: 38px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .about__text {
@@ -392,7 +396,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .about__btn {
@@ -422,7 +426,7 @@ body {
 
 /*offer*/
 .offer {
-    background-color: #f3f5f4;
+    background-color: var(--white-gray);
 }
 
 .offer__wrapper {
@@ -444,7 +448,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .offer__items {
@@ -467,15 +471,15 @@ body {
 }
 
 .offer__item:nth-of-type(1)::before {
-    background-image: url(./3offer/Опытный\ гид.png);
+    background-image: url(./img/3offer/Опытный\ гид.png);
 }
 
 .offer__item:nth-of-type(2)::before {
-    background-image: url(./3offer/Безопасный\ поход.png);
+    background-image: url(./img/3offer/Безопасный\ поход.png);
 }
 
 .offer__item:nth-of-type(3)::before {
-    background-image: url(./3offer/Лояльные\ цены.png);
+    background-image: url(./img/3offer/Лояльные\ цены.png);
 }
 
 .offer__item::before {
@@ -495,7 +499,7 @@ body {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: .216;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .offer__price {
@@ -657,7 +661,7 @@ body {
 
 .blog {
     padding: 100px 0;
-    background-color: #f3f5f4;
+    background-color: var(--white-gray);
 }
 
 .blog__content {
@@ -727,7 +731,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #18121e;
+    color: var(--dark);
     transition: all .3s;
     cursor: pointer;   
 }  
@@ -739,7 +743,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .news__info {
@@ -870,7 +874,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .newsletter__form {
@@ -888,8 +892,8 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: #18121e;
-    background: #f3f5f4;
+    color: var(--dark);
+    background: var(--white-gray);
 }
 
 .newsletter__button {
@@ -904,12 +908,12 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: #18121e;
+    color: var(--dark);
 }
 
 .newsletter__terms-link {
-    color: #18121e;
-    text-decoration: underline 1px solid #18121e;    
+    color: var(--dark);
+    text-decoration: underline 1px solid var(--dark);    
 }
 
 /* newsletter */
@@ -945,7 +949,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #f3f5f4;
+    color: var(--white-gray);
 }
 
 .footer__text {
@@ -954,7 +958,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #fff;
+    color: var(--white);
 }
 
 .footer__contacts {
@@ -969,7 +973,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     transition: all .3s;
 }
 
@@ -999,7 +1003,7 @@ body {
     margin-right: 10px;
     width: 8px;
     height: 10px;
-    fill: #fff;
+    fill: var(--white);
     transition: all .3s;
 }
 
@@ -1027,9 +1031,9 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    text-decoration: underline 1px solid #fff;
+    text-decoration: underline 1px solid var(--white);
     text-transform: lowercase;
     color: var(--dark-sea);
-    background: #fff;
+    background: var(--white);
 }
 /* footer */
